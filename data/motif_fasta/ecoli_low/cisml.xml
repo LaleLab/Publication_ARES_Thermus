@@ -1,0 +1,1091 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --oc motif_fasta/ecoli_low --verbosity 1 --thresh 0.0002 motif_fasta/ecoli_low/streme.txt motif_fasta/ares_allseqs.fa</command-line>
+<pattern-file>motif_fasta/ecoli_low/streme.txt</pattern-file>
+<sequence-file>motif_fasta/ares_allseqs.fa</sequence-file>
+<site-pvalue-cutoff>0.0002</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="1-YGTTAACR" name="STREME-1">
+<scanned-sequence accession="1" name="1">
+</scanned-sequence>
+<scanned-sequence accession="2" name="2">
+</scanned-sequence>
+<scanned-sequence accession="3" name="3">
+</scanned-sequence>
+<scanned-sequence accession="4" name="4">
+</scanned-sequence>
+<scanned-sequence accession="5" name="5">
+</scanned-sequence>
+<scanned-sequence accession="6" name="6">
+</scanned-sequence>
+<scanned-sequence accession="7" name="7">
+</scanned-sequence>
+<scanned-sequence accession="8" name="8">
+</scanned-sequence>
+<scanned-sequence accession="9" name="9">
+</scanned-sequence>
+<scanned-sequence accession="10" name="10">
+</scanned-sequence>
+<scanned-sequence accession="11" name="11">
+</scanned-sequence>
+<scanned-sequence accession="12" name="12">
+</scanned-sequence>
+<scanned-sequence accession="13" name="13">
+</scanned-sequence>
+<scanned-sequence accession="14" name="14">
+</scanned-sequence>
+<scanned-sequence accession="15" name="15">
+</scanned-sequence>
+<scanned-sequence accession="16" name="16">
+</scanned-sequence>
+<scanned-sequence accession="17" name="17">
+</scanned-sequence>
+<scanned-sequence accession="18" name="18">
+</scanned-sequence>
+<scanned-sequence accession="19" name="19">
+</scanned-sequence>
+<scanned-sequence accession="20" name="20">
+</scanned-sequence>
+<scanned-sequence accession="21" name="21">
+</scanned-sequence>
+<scanned-sequence accession="22" name="22">
+</scanned-sequence>
+<scanned-sequence accession="23" name="23">
+</scanned-sequence>
+<scanned-sequence accession="24" name="24">
+</scanned-sequence>
+<scanned-sequence accession="25" name="25">
+</scanned-sequence>
+<scanned-sequence accession="26" name="26">
+</scanned-sequence>
+<scanned-sequence accession="27" name="27">
+</scanned-sequence>
+<scanned-sequence accession="28" name="28">
+</scanned-sequence>
+<scanned-sequence accession="29" name="29">
+</scanned-sequence>
+<scanned-sequence accession="30" name="30">
+</scanned-sequence>
+<scanned-sequence accession="31" name="31">
+</scanned-sequence>
+<scanned-sequence accession="32" name="32">
+</scanned-sequence>
+<scanned-sequence accession="33" name="33">
+<matched-element start="43" stop="50" score="9.94937" pvalue="5.75e-05">
+<sequence>TGTTAACG</sequence>
+<mem:qvalue>0.563</mem:qvalue>
+</matched-element>
+<matched-element start="50" stop="43" score="9.94937" pvalue="5.75e-05">
+<sequence>CGTTAACA</sequence>
+<mem:qvalue>0.563</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="34" name="34">
+</scanned-sequence>
+<scanned-sequence accession="35" name="35">
+</scanned-sequence>
+<scanned-sequence accession="36" name="36">
+</scanned-sequence>
+<scanned-sequence accession="37" name="37">
+</scanned-sequence>
+<scanned-sequence accession="38" name="38">
+</scanned-sequence>
+<scanned-sequence accession="39" name="39">
+</scanned-sequence>
+<scanned-sequence accession="40" name="40">
+</scanned-sequence>
+<scanned-sequence accession="41" name="41">
+</scanned-sequence>
+<scanned-sequence accession="42" name="42">
+</scanned-sequence>
+<scanned-sequence accession="43" name="43">
+</scanned-sequence>
+<scanned-sequence accession="44" name="44">
+</scanned-sequence>
+<scanned-sequence accession="45" name="45">
+</scanned-sequence>
+<scanned-sequence accession="46" name="46">
+</scanned-sequence>
+<scanned-sequence accession="47" name="47">
+</scanned-sequence>
+<scanned-sequence accession="48" name="48">
+</scanned-sequence>
+<scanned-sequence accession="49" name="49">
+</scanned-sequence>
+<scanned-sequence accession="50" name="50">
+</scanned-sequence>
+<scanned-sequence accession="51" name="51">
+</scanned-sequence>
+<scanned-sequence accession="52" name="52">
+</scanned-sequence>
+<scanned-sequence accession="53" name="53">
+</scanned-sequence>
+<scanned-sequence accession="Pnqo" name="Pnqo">
+</scanned-sequence>
+<scanned-sequence accession="PslpA" name="PslpA">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="2-CTCCTTWWH" name="STREME-2">
+<scanned-sequence accession="1" name="1">
+</scanned-sequence>
+<scanned-sequence accession="2" name="2">
+</scanned-sequence>
+<scanned-sequence accession="3" name="3">
+<matched-element start="168" stop="160" score="11.7105" pvalue="9.82e-06">
+<sequence>CTCCTTAAT</sequence>
+<mem:qvalue>0.152</mem:qvalue>
+</matched-element>
+<matched-element start="119" stop="127" score="11.1316" pvalue="2.37e-05">
+<sequence>CTCCTTAAC</sequence>
+<mem:qvalue>0.152</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="4" name="4">
+<matched-element start="174" stop="166" score="9.98684" pvalue="0.000126">
+<sequence>CTCCTCAAT</sequence>
+<mem:qvalue>0.345</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="5" name="5">
+</scanned-sequence>
+<scanned-sequence accession="6" name="6">
+</scanned-sequence>
+<scanned-sequence accession="7" name="7">
+</scanned-sequence>
+<scanned-sequence accession="8" name="8">
+</scanned-sequence>
+<scanned-sequence accession="9" name="9">
+</scanned-sequence>
+<scanned-sequence accession="10" name="10">
+</scanned-sequence>
+<scanned-sequence accession="11" name="11">
+</scanned-sequence>
+<scanned-sequence accession="12" name="12">
+</scanned-sequence>
+<scanned-sequence accession="13" name="13">
+</scanned-sequence>
+<scanned-sequence accession="14" name="14">
+</scanned-sequence>
+<scanned-sequence accession="15" name="15">
+</scanned-sequence>
+<scanned-sequence accession="16" name="16">
+</scanned-sequence>
+<scanned-sequence accession="17" name="17">
+</scanned-sequence>
+<scanned-sequence accession="18" name="18">
+</scanned-sequence>
+<scanned-sequence accession="19" name="19">
+</scanned-sequence>
+<scanned-sequence accession="20" name="20">
+</scanned-sequence>
+<scanned-sequence accession="21" name="21">
+</scanned-sequence>
+<scanned-sequence accession="22" name="22">
+</scanned-sequence>
+<scanned-sequence accession="23" name="23">
+</scanned-sequence>
+<scanned-sequence accession="24" name="24">
+</scanned-sequence>
+<scanned-sequence accession="25" name="25">
+</scanned-sequence>
+<scanned-sequence accession="26" name="26">
+</scanned-sequence>
+<scanned-sequence accession="27" name="27">
+</scanned-sequence>
+<scanned-sequence accession="28" name="28">
+<matched-element start="90" stop="98" score="10.6316" pvalue="7.15e-05">
+<sequence>CTCCTGAAT</sequence>
+<mem:qvalue>0.273</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="29" name="29">
+</scanned-sequence>
+<scanned-sequence accession="30" name="30">
+</scanned-sequence>
+<scanned-sequence accession="31" name="31">
+</scanned-sequence>
+<scanned-sequence accession="32" name="32">
+</scanned-sequence>
+<scanned-sequence accession="33" name="33">
+</scanned-sequence>
+<scanned-sequence accession="34" name="34">
+</scanned-sequence>
+<scanned-sequence accession="35" name="35">
+</scanned-sequence>
+<scanned-sequence accession="36" name="36">
+</scanned-sequence>
+<scanned-sequence accession="37" name="37">
+</scanned-sequence>
+<scanned-sequence accession="38" name="38">
+</scanned-sequence>
+<scanned-sequence accession="39" name="39">
+</scanned-sequence>
+<scanned-sequence accession="40" name="40">
+</scanned-sequence>
+<scanned-sequence accession="41" name="41">
+<matched-element start="187" stop="179" score="10.9342" pvalue="3.17e-05">
+<sequence>CTCCTTAAG</sequence>
+<mem:qvalue>0.152</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="42" name="42">
+</scanned-sequence>
+<scanned-sequence accession="43" name="43">
+</scanned-sequence>
+<scanned-sequence accession="44" name="44">
+</scanned-sequence>
+<scanned-sequence accession="45" name="45">
+</scanned-sequence>
+<scanned-sequence accession="46" name="46">
+</scanned-sequence>
+<scanned-sequence accession="47" name="47">
+</scanned-sequence>
+<scanned-sequence accession="48" name="48">
+</scanned-sequence>
+<scanned-sequence accession="49" name="49">
+</scanned-sequence>
+<scanned-sequence accession="50" name="50">
+</scanned-sequence>
+<scanned-sequence accession="51" name="51">
+</scanned-sequence>
+<scanned-sequence accession="52" name="52">
+</scanned-sequence>
+<scanned-sequence accession="53" name="53">
+</scanned-sequence>
+<scanned-sequence accession="Pnqo" name="Pnqo">
+</scanned-sequence>
+<scanned-sequence accession="PslpA" name="PslpA">
+<matched-element start="188" stop="180" score="10.9342" pvalue="3.17e-05">
+<sequence>CTCCTTAAG</sequence>
+<mem:qvalue>0.152</mem:qvalue>
+</matched-element>
+<matched-element start="91" stop="99" score="10.0395" pvalue="0.000118">
+<sequence>CTCCTTTTG</sequence>
+<mem:qvalue>0.345</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="3-AAATATA" name="STREME-3">
+<scanned-sequence accession="1" name="1">
+</scanned-sequence>
+<scanned-sequence accession="2" name="2">
+</scanned-sequence>
+<scanned-sequence accession="3" name="3">
+</scanned-sequence>
+<scanned-sequence accession="4" name="4">
+</scanned-sequence>
+<scanned-sequence accession="5" name="5">
+</scanned-sequence>
+<scanned-sequence accession="6" name="6">
+</scanned-sequence>
+<scanned-sequence accession="7" name="7">
+</scanned-sequence>
+<scanned-sequence accession="8" name="8">
+</scanned-sequence>
+<scanned-sequence accession="9" name="9">
+</scanned-sequence>
+<scanned-sequence accession="10" name="10">
+</scanned-sequence>
+<scanned-sequence accession="11" name="11">
+</scanned-sequence>
+<scanned-sequence accession="12" name="12">
+</scanned-sequence>
+<scanned-sequence accession="13" name="13">
+</scanned-sequence>
+<scanned-sequence accession="14" name="14">
+</scanned-sequence>
+<scanned-sequence accession="15" name="15">
+</scanned-sequence>
+<scanned-sequence accession="16" name="16">
+</scanned-sequence>
+<scanned-sequence accession="17" name="17">
+</scanned-sequence>
+<scanned-sequence accession="18" name="18">
+</scanned-sequence>
+<scanned-sequence accession="19" name="19">
+</scanned-sequence>
+<scanned-sequence accession="20" name="20">
+</scanned-sequence>
+<scanned-sequence accession="21" name="21">
+</scanned-sequence>
+<scanned-sequence accession="22" name="22">
+</scanned-sequence>
+<scanned-sequence accession="23" name="23">
+</scanned-sequence>
+<scanned-sequence accession="24" name="24">
+</scanned-sequence>
+<scanned-sequence accession="25" name="25">
+</scanned-sequence>
+<scanned-sequence accession="26" name="26">
+</scanned-sequence>
+<scanned-sequence accession="27" name="27">
+</scanned-sequence>
+<scanned-sequence accession="28" name="28">
+</scanned-sequence>
+<scanned-sequence accession="29" name="29">
+</scanned-sequence>
+<scanned-sequence accession="30" name="30">
+</scanned-sequence>
+<scanned-sequence accession="31" name="31">
+</scanned-sequence>
+<scanned-sequence accession="32" name="32">
+</scanned-sequence>
+<scanned-sequence accession="33" name="33">
+</scanned-sequence>
+<scanned-sequence accession="34" name="34">
+</scanned-sequence>
+<scanned-sequence accession="35" name="35">
+</scanned-sequence>
+<scanned-sequence accession="36" name="36">
+</scanned-sequence>
+<scanned-sequence accession="37" name="37">
+</scanned-sequence>
+<scanned-sequence accession="38" name="38">
+</scanned-sequence>
+<scanned-sequence accession="39" name="39">
+</scanned-sequence>
+<scanned-sequence accession="40" name="40">
+</scanned-sequence>
+<scanned-sequence accession="41" name="41">
+</scanned-sequence>
+<scanned-sequence accession="42" name="42">
+<matched-element start="152" stop="146" score="10.0526" pvalue="0.000118">
+<sequence>AAATATA</sequence>
+<mem:qvalue>1</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="43" name="43">
+</scanned-sequence>
+<scanned-sequence accession="44" name="44">
+</scanned-sequence>
+<scanned-sequence accession="45" name="45">
+</scanned-sequence>
+<scanned-sequence accession="46" name="46">
+</scanned-sequence>
+<scanned-sequence accession="47" name="47">
+</scanned-sequence>
+<scanned-sequence accession="48" name="48">
+</scanned-sequence>
+<scanned-sequence accession="49" name="49">
+</scanned-sequence>
+<scanned-sequence accession="50" name="50">
+</scanned-sequence>
+<scanned-sequence accession="51" name="51">
+</scanned-sequence>
+<scanned-sequence accession="52" name="52">
+</scanned-sequence>
+<scanned-sequence accession="53" name="53">
+</scanned-sequence>
+<scanned-sequence accession="Pnqo" name="Pnqo">
+</scanned-sequence>
+<scanned-sequence accession="PslpA" name="PslpA">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="4-AATAAAA" name="STREME-4">
+<scanned-sequence accession="1" name="1">
+</scanned-sequence>
+<scanned-sequence accession="2" name="2">
+</scanned-sequence>
+<scanned-sequence accession="3" name="3">
+</scanned-sequence>
+<scanned-sequence accession="4" name="4">
+</scanned-sequence>
+<scanned-sequence accession="5" name="5">
+</scanned-sequence>
+<scanned-sequence accession="6" name="6">
+</scanned-sequence>
+<scanned-sequence accession="7" name="7">
+</scanned-sequence>
+<scanned-sequence accession="8" name="8">
+</scanned-sequence>
+<scanned-sequence accession="9" name="9">
+</scanned-sequence>
+<scanned-sequence accession="10" name="10">
+</scanned-sequence>
+<scanned-sequence accession="11" name="11">
+</scanned-sequence>
+<scanned-sequence accession="12" name="12">
+</scanned-sequence>
+<scanned-sequence accession="13" name="13">
+</scanned-sequence>
+<scanned-sequence accession="14" name="14">
+</scanned-sequence>
+<scanned-sequence accession="15" name="15">
+</scanned-sequence>
+<scanned-sequence accession="16" name="16">
+</scanned-sequence>
+<scanned-sequence accession="17" name="17">
+</scanned-sequence>
+<scanned-sequence accession="18" name="18">
+</scanned-sequence>
+<scanned-sequence accession="19" name="19">
+</scanned-sequence>
+<scanned-sequence accession="20" name="20">
+</scanned-sequence>
+<scanned-sequence accession="21" name="21">
+</scanned-sequence>
+<scanned-sequence accession="22" name="22">
+</scanned-sequence>
+<scanned-sequence accession="23" name="23">
+</scanned-sequence>
+<scanned-sequence accession="24" name="24">
+<matched-element start="134" stop="140" score="11.6832" pvalue="0.000118">
+<sequence>AATAAAA</sequence>
+<mem:qvalue>1</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="25" name="25">
+</scanned-sequence>
+<scanned-sequence accession="26" name="26">
+</scanned-sequence>
+<scanned-sequence accession="27" name="27">
+</scanned-sequence>
+<scanned-sequence accession="28" name="28">
+</scanned-sequence>
+<scanned-sequence accession="29" name="29">
+</scanned-sequence>
+<scanned-sequence accession="30" name="30">
+</scanned-sequence>
+<scanned-sequence accession="31" name="31">
+</scanned-sequence>
+<scanned-sequence accession="32" name="32">
+</scanned-sequence>
+<scanned-sequence accession="33" name="33">
+</scanned-sequence>
+<scanned-sequence accession="34" name="34">
+</scanned-sequence>
+<scanned-sequence accession="35" name="35">
+</scanned-sequence>
+<scanned-sequence accession="36" name="36">
+</scanned-sequence>
+<scanned-sequence accession="37" name="37">
+</scanned-sequence>
+<scanned-sequence accession="38" name="38">
+</scanned-sequence>
+<scanned-sequence accession="39" name="39">
+</scanned-sequence>
+<scanned-sequence accession="40" name="40">
+</scanned-sequence>
+<scanned-sequence accession="41" name="41">
+</scanned-sequence>
+<scanned-sequence accession="42" name="42">
+</scanned-sequence>
+<scanned-sequence accession="43" name="43">
+</scanned-sequence>
+<scanned-sequence accession="44" name="44">
+</scanned-sequence>
+<scanned-sequence accession="45" name="45">
+</scanned-sequence>
+<scanned-sequence accession="46" name="46">
+</scanned-sequence>
+<scanned-sequence accession="47" name="47">
+</scanned-sequence>
+<scanned-sequence accession="48" name="48">
+</scanned-sequence>
+<scanned-sequence accession="49" name="49">
+</scanned-sequence>
+<scanned-sequence accession="50" name="50">
+<matched-element start="119" stop="113" score="11.6832" pvalue="0.000118">
+<sequence>AATAAAA</sequence>
+<mem:qvalue>1</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="51" name="51">
+</scanned-sequence>
+<scanned-sequence accession="52" name="52">
+</scanned-sequence>
+<scanned-sequence accession="53" name="53">
+</scanned-sequence>
+<scanned-sequence accession="Pnqo" name="Pnqo">
+</scanned-sequence>
+<scanned-sequence accession="PslpA" name="PslpA">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="5-CACCCC" name="STREME-5">
+<scanned-sequence accession="1" name="1">
+</scanned-sequence>
+<scanned-sequence accession="2" name="2">
+</scanned-sequence>
+<scanned-sequence accession="3" name="3">
+</scanned-sequence>
+<scanned-sequence accession="4" name="4">
+</scanned-sequence>
+<scanned-sequence accession="5" name="5">
+</scanned-sequence>
+<scanned-sequence accession="6" name="6">
+</scanned-sequence>
+<scanned-sequence accession="7" name="7">
+<matched-element start="67" stop="72" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+<matched-element start="145" stop="140" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="8" name="8">
+</scanned-sequence>
+<scanned-sequence accession="9" name="9">
+<matched-element start="110" stop="105" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="10" name="10">
+<matched-element start="192" stop="187" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="11" name="11">
+</scanned-sequence>
+<scanned-sequence accession="12" name="12">
+</scanned-sequence>
+<scanned-sequence accession="13" name="13">
+</scanned-sequence>
+<scanned-sequence accession="14" name="14">
+</scanned-sequence>
+<scanned-sequence accession="15" name="15">
+</scanned-sequence>
+<scanned-sequence accession="16" name="16">
+</scanned-sequence>
+<scanned-sequence accession="17" name="17">
+</scanned-sequence>
+<scanned-sequence accession="18" name="18">
+<matched-element start="62" stop="57" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="19" name="19">
+<matched-element start="171" stop="166" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="20" name="20">
+</scanned-sequence>
+<scanned-sequence accession="21" name="21">
+</scanned-sequence>
+<scanned-sequence accession="22" name="22">
+</scanned-sequence>
+<scanned-sequence accession="23" name="23">
+<matched-element start="182" stop="177" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="24" name="24">
+</scanned-sequence>
+<scanned-sequence accession="25" name="25">
+</scanned-sequence>
+<scanned-sequence accession="26" name="26">
+</scanned-sequence>
+<scanned-sequence accession="27" name="27">
+</scanned-sequence>
+<scanned-sequence accession="28" name="28">
+</scanned-sequence>
+<scanned-sequence accession="29" name="29">
+</scanned-sequence>
+<scanned-sequence accession="30" name="30">
+</scanned-sequence>
+<scanned-sequence accession="31" name="31">
+</scanned-sequence>
+<scanned-sequence accession="32" name="32">
+<matched-element start="75" stop="80" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="33" name="33">
+</scanned-sequence>
+<scanned-sequence accession="34" name="34">
+</scanned-sequence>
+<scanned-sequence accession="35" name="35">
+</scanned-sequence>
+<scanned-sequence accession="36" name="36">
+</scanned-sequence>
+<scanned-sequence accession="37" name="37">
+</scanned-sequence>
+<scanned-sequence accession="38" name="38">
+</scanned-sequence>
+<scanned-sequence accession="39" name="39">
+</scanned-sequence>
+<scanned-sequence accession="40" name="40">
+</scanned-sequence>
+<scanned-sequence accession="41" name="41">
+</scanned-sequence>
+<scanned-sequence accession="42" name="42">
+</scanned-sequence>
+<scanned-sequence accession="43" name="43">
+</scanned-sequence>
+<scanned-sequence accession="44" name="44">
+</scanned-sequence>
+<scanned-sequence accession="45" name="45">
+</scanned-sequence>
+<scanned-sequence accession="46" name="46">
+</scanned-sequence>
+<scanned-sequence accession="47" name="47">
+<matched-element start="37" stop="32" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="48" name="48">
+</scanned-sequence>
+<scanned-sequence accession="49" name="49">
+</scanned-sequence>
+<scanned-sequence accession="50" name="50">
+</scanned-sequence>
+<scanned-sequence accession="51" name="51">
+</scanned-sequence>
+<scanned-sequence accession="52" name="52">
+</scanned-sequence>
+<scanned-sequence accession="53" name="53">
+<matched-element start="24" stop="19" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Pnqo" name="Pnqo">
+<matched-element start="53" stop="58" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+<matched-element start="324" stop="329" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+<matched-element start="340" stop="345" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+<matched-element start="351" stop="346" score="12.0061" pvalue="0.00016">
+<sequence>CACCCC</sequence>
+<mem:qvalue>0.224</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PslpA" name="PslpA">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="6-TRHNDYA" name="STREME-6">
+<scanned-sequence accession="1" name="1">
+</scanned-sequence>
+<scanned-sequence accession="2" name="2">
+</scanned-sequence>
+<scanned-sequence accession="3" name="3">
+</scanned-sequence>
+<scanned-sequence accession="4" name="4">
+</scanned-sequence>
+<scanned-sequence accession="5" name="5">
+</scanned-sequence>
+<scanned-sequence accession="6" name="6">
+</scanned-sequence>
+<scanned-sequence accession="7" name="7">
+</scanned-sequence>
+<scanned-sequence accession="8" name="8">
+</scanned-sequence>
+<scanned-sequence accession="9" name="9">
+</scanned-sequence>
+<scanned-sequence accession="10" name="10">
+</scanned-sequence>
+<scanned-sequence accession="11" name="11">
+</scanned-sequence>
+<scanned-sequence accession="12" name="12">
+</scanned-sequence>
+<scanned-sequence accession="13" name="13">
+</scanned-sequence>
+<scanned-sequence accession="14" name="14">
+</scanned-sequence>
+<scanned-sequence accession="15" name="15">
+</scanned-sequence>
+<scanned-sequence accession="16" name="16">
+</scanned-sequence>
+<scanned-sequence accession="17" name="17">
+</scanned-sequence>
+<scanned-sequence accession="18" name="18">
+</scanned-sequence>
+<scanned-sequence accession="19" name="19">
+</scanned-sequence>
+<scanned-sequence accession="20" name="20">
+</scanned-sequence>
+<scanned-sequence accession="21" name="21">
+</scanned-sequence>
+<scanned-sequence accession="22" name="22">
+</scanned-sequence>
+<scanned-sequence accession="23" name="23">
+</scanned-sequence>
+<scanned-sequence accession="24" name="24">
+</scanned-sequence>
+<scanned-sequence accession="25" name="25">
+</scanned-sequence>
+<scanned-sequence accession="26" name="26">
+</scanned-sequence>
+<scanned-sequence accession="27" name="27">
+</scanned-sequence>
+<scanned-sequence accession="28" name="28">
+</scanned-sequence>
+<scanned-sequence accession="29" name="29">
+</scanned-sequence>
+<scanned-sequence accession="30" name="30">
+</scanned-sequence>
+<scanned-sequence accession="31" name="31">
+</scanned-sequence>
+<scanned-sequence accession="32" name="32">
+</scanned-sequence>
+<scanned-sequence accession="33" name="33">
+</scanned-sequence>
+<scanned-sequence accession="34" name="34">
+</scanned-sequence>
+<scanned-sequence accession="35" name="35">
+</scanned-sequence>
+<scanned-sequence accession="36" name="36">
+</scanned-sequence>
+<scanned-sequence accession="37" name="37">
+</scanned-sequence>
+<scanned-sequence accession="38" name="38">
+</scanned-sequence>
+<scanned-sequence accession="39" name="39">
+</scanned-sequence>
+<scanned-sequence accession="40" name="40">
+</scanned-sequence>
+<scanned-sequence accession="41" name="41">
+</scanned-sequence>
+<scanned-sequence accession="42" name="42">
+</scanned-sequence>
+<scanned-sequence accession="43" name="43">
+</scanned-sequence>
+<scanned-sequence accession="44" name="44">
+</scanned-sequence>
+<scanned-sequence accession="45" name="45">
+</scanned-sequence>
+<scanned-sequence accession="46" name="46">
+</scanned-sequence>
+<scanned-sequence accession="47" name="47">
+</scanned-sequence>
+<scanned-sequence accession="48" name="48">
+</scanned-sequence>
+<scanned-sequence accession="49" name="49">
+</scanned-sequence>
+<scanned-sequence accession="50" name="50">
+</scanned-sequence>
+<scanned-sequence accession="51" name="51">
+</scanned-sequence>
+<scanned-sequence accession="52" name="52">
+</scanned-sequence>
+<scanned-sequence accession="53" name="53">
+</scanned-sequence>
+<scanned-sequence accession="Pnqo" name="Pnqo">
+</scanned-sequence>
+<scanned-sequence accession="PslpA" name="PslpA">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="7-AAATAA" name="STREME-7">
+<scanned-sequence accession="1" name="1">
+</scanned-sequence>
+<scanned-sequence accession="2" name="2">
+</scanned-sequence>
+<scanned-sequence accession="3" name="3">
+</scanned-sequence>
+<scanned-sequence accession="4" name="4">
+</scanned-sequence>
+<scanned-sequence accession="5" name="5">
+</scanned-sequence>
+<scanned-sequence accession="6" name="6">
+</scanned-sequence>
+<scanned-sequence accession="7" name="7">
+</scanned-sequence>
+<scanned-sequence accession="8" name="8">
+</scanned-sequence>
+<scanned-sequence accession="9" name="9">
+</scanned-sequence>
+<scanned-sequence accession="10" name="10">
+</scanned-sequence>
+<scanned-sequence accession="11" name="11">
+</scanned-sequence>
+<scanned-sequence accession="12" name="12">
+</scanned-sequence>
+<scanned-sequence accession="13" name="13">
+</scanned-sequence>
+<scanned-sequence accession="14" name="14">
+</scanned-sequence>
+<scanned-sequence accession="15" name="15">
+</scanned-sequence>
+<scanned-sequence accession="16" name="16">
+</scanned-sequence>
+<scanned-sequence accession="17" name="17">
+</scanned-sequence>
+<scanned-sequence accession="18" name="18">
+</scanned-sequence>
+<scanned-sequence accession="19" name="19">
+</scanned-sequence>
+<scanned-sequence accession="20" name="20">
+</scanned-sequence>
+<scanned-sequence accession="21" name="21">
+</scanned-sequence>
+<scanned-sequence accession="22" name="22">
+</scanned-sequence>
+<scanned-sequence accession="23" name="23">
+</scanned-sequence>
+<scanned-sequence accession="24" name="24">
+</scanned-sequence>
+<scanned-sequence accession="25" name="25">
+</scanned-sequence>
+<scanned-sequence accession="26" name="26">
+</scanned-sequence>
+<scanned-sequence accession="27" name="27">
+</scanned-sequence>
+<scanned-sequence accession="28" name="28">
+</scanned-sequence>
+<scanned-sequence accession="29" name="29">
+</scanned-sequence>
+<scanned-sequence accession="30" name="30">
+</scanned-sequence>
+<scanned-sequence accession="31" name="31">
+</scanned-sequence>
+<scanned-sequence accession="32" name="32">
+</scanned-sequence>
+<scanned-sequence accession="33" name="33">
+</scanned-sequence>
+<scanned-sequence accession="34" name="34">
+</scanned-sequence>
+<scanned-sequence accession="35" name="35">
+</scanned-sequence>
+<scanned-sequence accession="36" name="36">
+</scanned-sequence>
+<scanned-sequence accession="37" name="37">
+</scanned-sequence>
+<scanned-sequence accession="38" name="38">
+</scanned-sequence>
+<scanned-sequence accession="39" name="39">
+</scanned-sequence>
+<scanned-sequence accession="40" name="40">
+</scanned-sequence>
+<scanned-sequence accession="41" name="41">
+</scanned-sequence>
+<scanned-sequence accession="42" name="42">
+</scanned-sequence>
+<scanned-sequence accession="43" name="43">
+</scanned-sequence>
+<scanned-sequence accession="44" name="44">
+</scanned-sequence>
+<scanned-sequence accession="45" name="45">
+</scanned-sequence>
+<scanned-sequence accession="46" name="46">
+</scanned-sequence>
+<scanned-sequence accession="47" name="47">
+</scanned-sequence>
+<scanned-sequence accession="48" name="48">
+</scanned-sequence>
+<scanned-sequence accession="49" name="49">
+</scanned-sequence>
+<scanned-sequence accession="50" name="50">
+</scanned-sequence>
+<scanned-sequence accession="51" name="51">
+</scanned-sequence>
+<scanned-sequence accession="52" name="52">
+</scanned-sequence>
+<scanned-sequence accession="53" name="53">
+</scanned-sequence>
+<scanned-sequence accession="Pnqo" name="Pnqo">
+</scanned-sequence>
+<scanned-sequence accession="PslpA" name="PslpA">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="8-BAYWRTV" name="STREME-8">
+<scanned-sequence accession="1" name="1">
+</scanned-sequence>
+<scanned-sequence accession="2" name="2">
+</scanned-sequence>
+<scanned-sequence accession="3" name="3">
+</scanned-sequence>
+<scanned-sequence accession="4" name="4">
+</scanned-sequence>
+<scanned-sequence accession="5" name="5">
+</scanned-sequence>
+<scanned-sequence accession="6" name="6">
+</scanned-sequence>
+<scanned-sequence accession="7" name="7">
+</scanned-sequence>
+<scanned-sequence accession="8" name="8">
+</scanned-sequence>
+<scanned-sequence accession="9" name="9">
+</scanned-sequence>
+<scanned-sequence accession="10" name="10">
+</scanned-sequence>
+<scanned-sequence accession="11" name="11">
+</scanned-sequence>
+<scanned-sequence accession="12" name="12">
+</scanned-sequence>
+<scanned-sequence accession="13" name="13">
+</scanned-sequence>
+<scanned-sequence accession="14" name="14">
+</scanned-sequence>
+<scanned-sequence accession="15" name="15">
+</scanned-sequence>
+<scanned-sequence accession="16" name="16">
+</scanned-sequence>
+<scanned-sequence accession="17" name="17">
+</scanned-sequence>
+<scanned-sequence accession="18" name="18">
+</scanned-sequence>
+<scanned-sequence accession="19" name="19">
+</scanned-sequence>
+<scanned-sequence accession="20" name="20">
+</scanned-sequence>
+<scanned-sequence accession="21" name="21">
+</scanned-sequence>
+<scanned-sequence accession="22" name="22">
+</scanned-sequence>
+<scanned-sequence accession="23" name="23">
+</scanned-sequence>
+<scanned-sequence accession="24" name="24">
+</scanned-sequence>
+<scanned-sequence accession="25" name="25">
+</scanned-sequence>
+<scanned-sequence accession="26" name="26">
+</scanned-sequence>
+<scanned-sequence accession="27" name="27">
+</scanned-sequence>
+<scanned-sequence accession="28" name="28">
+</scanned-sequence>
+<scanned-sequence accession="29" name="29">
+</scanned-sequence>
+<scanned-sequence accession="30" name="30">
+</scanned-sequence>
+<scanned-sequence accession="31" name="31">
+</scanned-sequence>
+<scanned-sequence accession="32" name="32">
+</scanned-sequence>
+<scanned-sequence accession="33" name="33">
+</scanned-sequence>
+<scanned-sequence accession="34" name="34">
+</scanned-sequence>
+<scanned-sequence accession="35" name="35">
+</scanned-sequence>
+<scanned-sequence accession="36" name="36">
+</scanned-sequence>
+<scanned-sequence accession="37" name="37">
+</scanned-sequence>
+<scanned-sequence accession="38" name="38">
+</scanned-sequence>
+<scanned-sequence accession="39" name="39">
+</scanned-sequence>
+<scanned-sequence accession="40" name="40">
+</scanned-sequence>
+<scanned-sequence accession="41" name="41">
+</scanned-sequence>
+<scanned-sequence accession="42" name="42">
+</scanned-sequence>
+<scanned-sequence accession="43" name="43">
+</scanned-sequence>
+<scanned-sequence accession="44" name="44">
+</scanned-sequence>
+<scanned-sequence accession="45" name="45">
+</scanned-sequence>
+<scanned-sequence accession="46" name="46">
+</scanned-sequence>
+<scanned-sequence accession="47" name="47">
+</scanned-sequence>
+<scanned-sequence accession="48" name="48">
+</scanned-sequence>
+<scanned-sequence accession="49" name="49">
+</scanned-sequence>
+<scanned-sequence accession="50" name="50">
+</scanned-sequence>
+<scanned-sequence accession="51" name="51">
+</scanned-sequence>
+<scanned-sequence accession="52" name="52">
+</scanned-sequence>
+<scanned-sequence accession="53" name="53">
+</scanned-sequence>
+<scanned-sequence accession="Pnqo" name="Pnqo">
+</scanned-sequence>
+<scanned-sequence accession="PslpA" name="PslpA">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

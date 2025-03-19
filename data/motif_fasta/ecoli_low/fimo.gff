@@ -1,0 +1,27 @@
+##gff-version 3
+33	fimo	nucleotide_motif	43	50	42.4	+	.	Name=1-YGTTAACR_33+;Alias=STREME-1;ID=1-YGTTAACR-STREME-1-1-33;pvalue=5.75e-05;qvalue=0.563;sequence=TGTTAACG;
+33	fimo	nucleotide_motif	43	50	42.4	-	.	Name=1-YGTTAACR_33-;Alias=STREME-1;ID=1-YGTTAACR-STREME-1-2-33;pvalue=5.75e-05;qvalue=0.563;sequence=CGTTAACA;
+3	fimo	nucleotide_motif	160	168	50.1	-	.	Name=2-CTCCTTWWH_3-;Alias=STREME-2;ID=2-CTCCTTWWH-STREME-2-1-3;pvalue=9.82e-06;qvalue=0.152;sequence=CTCCTTAAT;
+3	fimo	nucleotide_motif	119	127	46.2	+	.	Name=2-CTCCTTWWH_3+;Alias=STREME-2;ID=2-CTCCTTWWH-STREME-2-2-3;pvalue=2.37e-05;qvalue=0.152;sequence=CTCCTTAAC;
+4	fimo	nucleotide_motif	166	174	 39	-	.	Name=2-CTCCTTWWH_4-;Alias=STREME-2;ID=2-CTCCTTWWH-STREME-2-1-4;pvalue=0.000126;qvalue=0.345;sequence=CTCCTCAAT;
+28	fimo	nucleotide_motif	90	98	41.4	+	.	Name=2-CTCCTTWWH_28+;Alias=STREME-2;ID=2-CTCCTTWWH-STREME-2-1-28;pvalue=7.15e-05;qvalue=0.273;sequence=CTCCTGAAT;
+41	fimo	nucleotide_motif	179	187	 45	-	.	Name=2-CTCCTTWWH_41-;Alias=STREME-2;ID=2-CTCCTTWWH-STREME-2-1-41;pvalue=3.17e-05;qvalue=0.152;sequence=CTCCTTAAG;
+PslpA	fimo	nucleotide_motif	180	188	 45	-	.	Name=2-CTCCTTWWH_PslpA-;Alias=STREME-2;ID=2-CTCCTTWWH-STREME-2-1-PslpA;pvalue=3.17e-05;qvalue=0.152;sequence=CTCCTTAAG;
+PslpA	fimo	nucleotide_motif	91	99	39.3	+	.	Name=2-CTCCTTWWH_PslpA+;Alias=STREME-2;ID=2-CTCCTTWWH-STREME-2-2-PslpA;pvalue=0.000118;qvalue=0.345;sequence=CTCCTTTTG;
+42	fimo	nucleotide_motif	146	152	39.3	-	.	Name=3-AAATATA_42-;Alias=STREME-3;ID=3-AAATATA-STREME-3-1-42;pvalue=0.000118;qvalue=1;sequence=AAATATA;
+24	fimo	nucleotide_motif	134	140	39.3	+	.	Name=4-AATAAAA_24+;Alias=STREME-4;ID=4-AATAAAA-STREME-4-1-24;pvalue=0.000118;qvalue=1;sequence=AATAAAA;
+50	fimo	nucleotide_motif	113	119	39.3	-	.	Name=4-AATAAAA_50-;Alias=STREME-4;ID=4-AATAAAA-STREME-4-1-50;pvalue=0.000118;qvalue=1;sequence=AATAAAA;
+7	fimo	nucleotide_motif	67	72	 38	+	.	Name=5-CACCCC_7+;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-7;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+7	fimo	nucleotide_motif	140	145	 38	-	.	Name=5-CACCCC_7-;Alias=STREME-5;ID=5-CACCCC-STREME-5-2-7;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+9	fimo	nucleotide_motif	105	110	 38	-	.	Name=5-CACCCC_9-;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-9;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+10	fimo	nucleotide_motif	187	192	 38	-	.	Name=5-CACCCC_10-;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-10;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+18	fimo	nucleotide_motif	57	62	 38	-	.	Name=5-CACCCC_18-;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-18;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+19	fimo	nucleotide_motif	166	171	 38	-	.	Name=5-CACCCC_19-;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-19;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+23	fimo	nucleotide_motif	177	182	 38	-	.	Name=5-CACCCC_23-;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-23;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+32	fimo	nucleotide_motif	75	80	 38	+	.	Name=5-CACCCC_32+;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-32;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+47	fimo	nucleotide_motif	32	37	 38	-	.	Name=5-CACCCC_47-;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-47;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+53	fimo	nucleotide_motif	19	24	 38	-	.	Name=5-CACCCC_53-;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-53;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+Pnqo	fimo	nucleotide_motif	53	58	 38	+	.	Name=5-CACCCC_Pnqo+;Alias=STREME-5;ID=5-CACCCC-STREME-5-1-Pnqo;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+Pnqo	fimo	nucleotide_motif	324	329	 38	+	.	Name=5-CACCCC_Pnqo+;Alias=STREME-5;ID=5-CACCCC-STREME-5-2-Pnqo;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+Pnqo	fimo	nucleotide_motif	340	345	 38	+	.	Name=5-CACCCC_Pnqo+;Alias=STREME-5;ID=5-CACCCC-STREME-5-3-Pnqo;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;
+Pnqo	fimo	nucleotide_motif	346	351	 38	-	.	Name=5-CACCCC_Pnqo-;Alias=STREME-5;ID=5-CACCCC-STREME-5-4-Pnqo;pvalue=0.00016;qvalue=0.224;sequence=CACCCC;

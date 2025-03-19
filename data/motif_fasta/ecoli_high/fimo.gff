@@ -1,0 +1,15 @@
+##gff-version 3
+3	fimo	nucleotide_motif	117	125	38.7	-	.	Name=1-TAAGGAGAR_3-;Alias=STREME-1;ID=1-TAAGGAGAR-STREME-1-1-3;pvalue=0.000133;qvalue=0.631;sequence=TAAGGAGTT;
+10	fimo	nucleotide_motif	11	19	37.8	+	.	Name=1-TAAGGAGAR_10+;Alias=STREME-1;ID=1-TAAGGAGAR-STREME-1-1-10;pvalue=0.000164;qvalue=0.631;sequence=TAAAGAGAG;
+19	fimo	nucleotide_motif	52	60	38.9	+	.	Name=1-TAAGGAGAR_19+;Alias=STREME-1;ID=1-TAAGGAGAR-STREME-1-1-19;pvalue=0.000128;qvalue=0.631;sequence=TAAGGAGTC;
+42	fimo	nucleotide_motif	177	185	39.8	+	.	Name=1-TAAGGAGAR_42+;Alias=STREME-1;ID=1-TAAGGAGAR-STREME-1-1-42;pvalue=0.000105;qvalue=0.631;sequence=TAAGGGGAG;
+Pnqo	fimo	nucleotide_motif	306	314	43.1	-	.	Name=1-TAAGGAGAR_Pnqo-;Alias=STREME-1;ID=1-TAAGGAGAR-STREME-1-1-Pnqo;pvalue=4.88e-05;qvalue=0.631;sequence=GAAGGAGAA;
+23	fimo	nucleotide_motif	167	177	44.5	+	.	Name=2-CKWTAASGHAR_23+;Alias=STREME-2;ID=2-CKWTAASGHAR-STREME-2-1-23;pvalue=3.5e-05;qvalue=0.673;sequence=GGTTAAGGCAG;
+11	fimo	nucleotide_motif	2	9	37.7	+	.	Name=3-CTKGTTTD_11+;Alias=STREME-3;ID=3-CTKGTTTD-STREME-3-1-11;pvalue=0.000168;qvalue=1;sequence=CTTGTTTT;
+14	fimo	nucleotide_motif	53	60	38.9	+	.	Name=3-CTKGTTTD_14+;Alias=STREME-3;ID=3-CTKGTTTD-STREME-3-1-14;pvalue=0.000128;qvalue=1;sequence=CTGGTTGT;
+19	fimo	nucleotide_motif	192	198	37.6	+	.	Name=6-CAGGCAA_19+;Alias=STREME-6;ID=6-CAGGCAA-STREME-6-1-19;pvalue=0.000172;qvalue=1;sequence=CAGGTAA;
+51	fimo	nucleotide_motif	2	8	39.7	-	.	Name=6-CAGGCAA_51-;Alias=STREME-6;ID=6-CAGGCAA-STREME-6-1-51;pvalue=0.000107;qvalue=1;sequence=CAGGGAA;
+14	fimo	nucleotide_motif	182	188	38.4	-	.	Name=8-ATGAAAC_14-;Alias=STREME-8;ID=8-ATGAAAC-STREME-8-1-14;pvalue=0.000144;qvalue=0.71;sequence=ACGAAAC;
+18	fimo	nucleotide_motif	26	32	38.4	-	.	Name=8-ATGAAAC_18-;Alias=STREME-8;ID=8-ATGAAAC-STREME-8-1-18;pvalue=0.000144;qvalue=0.71;sequence=ACGAAAC;
+22	fimo	nucleotide_motif	59	65	38.4	-	.	Name=8-ATGAAAC_22-;Alias=STREME-8;ID=8-ATGAAAC-STREME-8-1-22;pvalue=0.000144;qvalue=0.71;sequence=ACGAAAC;
+Pnqo	fimo	nucleotide_motif	401	407	38.4	-	.	Name=8-ATGAAAC_Pnqo-;Alias=STREME-8;ID=8-ATGAAAC-STREME-8-1-Pnqo;pvalue=0.000144;qvalue=0.71;sequence=ACGAAAC;

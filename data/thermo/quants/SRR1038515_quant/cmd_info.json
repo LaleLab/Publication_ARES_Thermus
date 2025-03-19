@@ -1,0 +1,13 @@
+{
+    "salmon_version": "1.9.0",
+    "index": "thermo_index",
+    "libType": "A",
+    "unmatedReads": "rnaseq/SRR1038515.fastq.gz",
+    "seqBias": [],
+    "gcBias": [],
+    "posBias": [],
+    "threads": "8",
+    "validateMappings": [],
+    "output": "quants/SRR1038515_quant",
+    "auxDir": "aux_info"
+}

@@ -1,0 +1,22 @@
+{
+    "read_files": "[ rnaseq/SRR1038512.fastq.gz ]",
+    "expected_format": "U",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 26735249,
+    "num_assigned_fragments": 26735249,
+    "num_frags_with_concordant_consistent_mappings": 26758964,
+    "num_frags_with_inconsistent_or_orphan_mappings": 0,
+    "strand_mapping_bias": 0.5101345478098479,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 0,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 0,
+    "SF": 13650672,
+    "SR": 13108292,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}
