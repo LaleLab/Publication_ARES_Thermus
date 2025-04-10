@@ -1,2 +1,2 @@
 # ares_thermus
-Scripts used in the publication Wong et al. 2023. Establishment of artificial 5′ regulatory sequences in the extremophile Thermus thermophilus and their use in the expression of a thermophilic cellulase.
+Scripts used in the publication Wong et al. 2025, Engineering Artificial 5′ Regulatory Sequences for Enhanced Thermostable Protein Expression in the Extremophile Thermus thermophilus.
